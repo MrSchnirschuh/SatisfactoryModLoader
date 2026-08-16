@@ -628,3 +628,8 @@ FodyWeavers.xsd
 
 # graphify persistent knowledge graph output
 /graphify-out/
+
+# Local environment secrets
+.env
+.env.*
+!.env.example
