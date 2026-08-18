@@ -192,7 +192,7 @@ jobs:
           /tmp/work/ue/Engine/Build/BatchFiles/RunUAT.sh -ScriptsForProject="/tmp/work/SML/FactoryGame.uproject" PackagePlugin -Project="/tmp/work/SML/FactoryGame.uproject" -dlcname=SML -merge -build -server -clientconfig=Shipping -serverconfig=Shipping -platform=Win64 -serverplatform=Win64+Linux -nocompileeditor -installed
 
       - name: Archive SML artifact
-        uses: actions/upload-artifact@v7
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
         if: ${{ github.event_name == 'push' }}
         with:
           name: sml
