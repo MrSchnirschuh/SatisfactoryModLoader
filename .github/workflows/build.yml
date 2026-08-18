@@ -146,7 +146,7 @@ jobs:
             echo "UE_WINE_MSVC=`realpath $MSVC_DIR`" >> $GITHUB_ENV
 
       # SML and UE are copied/downloaded outside the github workspace, because of path length limiations in MSVC
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410b181273ba90b1 # v7.0.1
         with:
           path: SML
 
